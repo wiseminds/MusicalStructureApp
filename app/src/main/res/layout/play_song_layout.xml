@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructureapp.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background2"/>
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/ct"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="24dp"
+            android:background="#3e3c3d"
+            android:orientation="vertical"
+            >
+    <ImageView
+        android:id="@+id/song_art"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/play_song"
+        android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/song_name"
+            style="@style/my_text"
+            tools:text="0:00"
+            android:textSize="36sp"/>
+        <TextView
+            android:id="@+id/artist_name"
+            style="@style/my_text"
+            tools:text="0:00"
+            android:textSize="26sp"/>
+        <Button
+            android:id="@+id/favourite_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_favourite_icon"/>
+        <LinearLayout
+            android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            >
+        <TextView
+            android:id="@+id/duration_played_text_view"
+            style="@style/my_text"
+            tools:text="0:00"
+           />
+
+        <SeekBar
+            android:id="@+id/seek_song"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            tools:verticalScrollbarPosition="right"
+            />
+            <TextView
+                android:id="@+id/duration_text_view"
+                style="@style/my_text"
+                tools:text="05:30"
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+         android:paddingRight="16dp"
+            android:paddingLeft="18dp"
+
+        >
+
+        <Button
+            android:id="@+id/rewind_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+             android:background="@drawable/ic_rewind_icon"/>
+        <Button
+            android:id="@+id/play_button"
+            android:layout_width="60dp"
+            android:gravity="center_vertical"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_play_icon"/>
+
+        <Button
+            android:id="@+id/foward_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+       android:layout_alignParentRight="true"
+           android:background="@drawable/ic_foward_icon" />
+
+
+
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+

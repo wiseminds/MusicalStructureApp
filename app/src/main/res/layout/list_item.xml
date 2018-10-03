@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/song_image_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_gravity="center_vertical">
+
+
+    <TextView
+        android:id="@+id/sond_name_text_view"
+        style="@style/my_text2"
+        android:textSize="20sp"
+        tools:text="What A Beautiful Name" />
+    <TextView
+        android:id="@+id/artist_name_text_view"
+        style="@style/my_text2"
+        android:textSize="15sp"
+        tools:text="Hillsong"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/duration_text_view"
+        style="@style/my_text2"
+        tools:text="5:30"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>
