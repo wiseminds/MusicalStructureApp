@@ -1,3 +1,6 @@
+<!--this is an xml file that has a list of songs,-->
+    <!--an xml pull parser is used to read the songname,-->
+<!--artist name, song duration, and song image id.-->
 <Root>
     <Song>
         <songname>Arise</songname>

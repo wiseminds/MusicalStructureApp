@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PlaySong"
+            android:name=".PlaySongActivity"
             android:label="@string/app_name"/>
 
     </application>
